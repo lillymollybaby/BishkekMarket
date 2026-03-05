@@ -1,5 +1,4 @@
 import SwiftUI
-import Foundation
 
 enum AppColor {
     // Primary brand colors

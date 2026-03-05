@@ -136,8 +136,8 @@ struct SalonDetailView: View {
     
     var mockReviews: [Review] {
         [
-            Review(authorName: "Салима К.", rating: 5, text: "Отличный салон! Назира – волшебница. Обязательно вернусь!", date: "3 days", likesCount: 12, hasPhotos: true),
-            Review(authorName: "Марина В.", rating: 4, text: "Очень довольна, внимательны и сделала всё на высшем уровне", date: "7 days", likesCount: 5, hasPhotos: false)
+            Review(id: UUID(), authorName: "Салима К.", rating: 5, text: "Отличный салон! Назира – волшебница. Обязательно вернусь!", date: "3 days", likesCount: 12, hasPhotos: true),
+            Review(id: UUID(), authorName: "Марина В.", rating: 4, text: "Очень довольна, внимательны и сделала всё на высшем уровне", date: "7 days", likesCount: 5, hasPhotos: false)
         ]
     }
 }
