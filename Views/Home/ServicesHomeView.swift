@@ -16,6 +16,8 @@ struct ServicesHomeView: View {
                     // Search
                     NavigationLink(destination: ServicesSearchView()) {
                         SearchBar(text: $searchText, placeholder: "Поиск услуг, салонов...")
+                            .background(AppColor.surface)
+                            .clipShape(RoundedRectangle(cornerRadius: AppRadius.md))
                     }
                     .buttonStyle(.plain)
                     .padding(.horizontal, AppSpacing.lg)
@@ -128,8 +130,8 @@ struct ServicesHomeView: View {
     
     var mockReviews: [Review] {
         [
-            Review(id: UUID(), authorName: "Салима К.", rating: 5, text: "Отличный салон! Назира – волшебница, волосы выглядят потрясающе. Обязательно вернусь!", date: "3 days", likesCount: 12, hasPhotos: true),
-            Review(id: UUID(), authorName: "Мар...", rating: 4, text: "Очень довольна, внимательны и сделала...", date: "7 days", likesCount: 5, hasPhotos: false)
+            Review(authorName: "Салима К.", rating: 5, text: "Отличный салон! Назира – волшебница, волосы выглядят потрясающе. Обязательно вернусь!", date: "3 days", likesCount: 12, hasPhotos: true),
+            Review(authorName: "Мар...", rating: 4, text: "Очень довольна, внимательны и сделала...", date: "7 days", likesCount: 5, hasPhotos: false)
         ]
     }
 }
